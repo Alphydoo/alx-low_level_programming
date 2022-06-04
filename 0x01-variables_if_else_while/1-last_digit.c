@@ -13,6 +13,7 @@ int main(void)
         char last[] = "Last digit of"
 
 	srand(time(0));
+
 	n = rand() -RAND_MAX / 2;
 	if (n % 10 > 5)
 	{
