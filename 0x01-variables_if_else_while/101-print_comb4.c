@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of three digits.
+ * main - prints numbers from 00 to 99.
  *
  * Return: 0 on success
  */
