@@ -9,7 +9,7 @@ int main(void)
 	char c[] = "main";
 	int i;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 7; i++)
 	{
 		putchar(c[i]);
 	}
