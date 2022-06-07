@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * _putchar - a program that prints " _putchar" from character array.
  *
  * Return: 0 on success
  */
