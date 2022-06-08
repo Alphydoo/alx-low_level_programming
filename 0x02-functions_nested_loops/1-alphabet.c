@@ -5,13 +5,12 @@
  * Return: 0 on success
  */
 int main(void)
-{
+{	
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(c);		
+		int _putchar(char c);		
 	}
-	_putchar('\n');
 	return (0);
 }
