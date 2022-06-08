@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet_x10 - a functions that prints 10 times the alphabet.
+ * main - a functions that prints 10 times the alphabet.
  *
  * Return: x10 a-z
  */
-void print_alphabet_x10(void)
+int main(void)
 {
 	int n, co;
 
@@ -17,8 +18,8 @@ void print_alphabet_x10(void)
 			_putchar(n);
 		}
 
-		_putchar('\n');
-
+		 _putchar('\n');
 		co++;
 	}
+	return (0);
 }
