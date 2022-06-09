@@ -2,13 +2,16 @@
 /**
  * print_numbers - a funtion that prints the numbers, from 0 to 9
  *
- * Return: 0-9 follwed by a newline
+ * Return: 0-9 followed by a newline
  */
 void print_numbers(void)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i <= 9; i++)
+	while (i <= 9)
+	{
 		_putchar(i + '0');
+		i++;
+	}
 	_putchar('\n');
 }
