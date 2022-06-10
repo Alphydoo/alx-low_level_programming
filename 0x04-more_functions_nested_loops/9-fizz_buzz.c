@@ -2,28 +2,28 @@
 #include <stdlib.h>
 /**
  * main - prints the numbers from 1 to 100
- * 3 multiples print Fizz intead of the number
- * 5 multiples print Buzz instead of the number
- * 3 and 5 multiples print FizzBuzz instead of the number
+ * instead of multiples of 3, print Fizz
+ * instead of multiples of 5, print Buzz
+ * for multiples of 3 and 5, print FizzBuzz
+ *
  * Return: 0 on success
  */
 int main(void)
 {
 	int i;
-	char f[] = "Fizz";
-	char b[] = "Buzz";
-	char fb[] = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i == 100)
-			printf("%s", b);
-		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", f);
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
 		else if (i % 5 == 0)
-			printf("%s ", b);
+			printf("Buzz");
 		else
 			printf("%d ", i);
+		if (i != 100)
+			putchar(' ');
 	}
 	printf("\n");
 	return (0);
