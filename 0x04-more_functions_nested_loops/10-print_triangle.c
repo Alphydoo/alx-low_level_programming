@@ -4,7 +4,7 @@
  * @size: size of the triangle
  * Return: triange of '#'s
  */
-void print_triangle(int size)
+void print_triangle(int size);
 {
 	int sp, ro, tr;
 
@@ -16,7 +16,7 @@ void print_triangle(int size)
 	{
 		for (ro = 0; ro <= (size - 1); ro++)
 		{
-			for (sp = 0; sp < (size -1) - ro; sp++)
+			for (sp = 0; sp < (size - 1) - ro; sp++)
 			{
 				_putchar(' ');
 			}
