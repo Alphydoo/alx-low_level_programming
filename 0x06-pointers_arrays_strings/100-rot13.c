@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * rot13 - Entry point
+ * rot13 - a function that encodes a string using rot13
  * ONE if, TWO loops only...
- * @n: input
+ * @c: input
  * Return: decrypted string
  */
-char *rot13(char *)
+char *rot13(char *c)
 {
 	int x, rot_c = 13, i = 0;
 	char toswap[] = {'A', 'N', 'a', 'n', 'B', 'O', 'b', 'o', 'C', 'P',
@@ -15,18 +15,18 @@ char *rot13(char *)
 		'J', 'W', 'j', 'w', 'K', 'X', 'k', 'x', 'L', 'Y', 'l', 'y', 'M',
 		'Z', 'm', 'z'};
 
-	while (n[i] != '\0')
+	while (c[i] != '\0')
 	{
 		for (x = 0; x <= 51; x++)
 		{
-			if (n[i] == toswap[x])
+			if (c[i] == toswap[x])
 			{
-				n[i] = n[i] + rot_c;
+				c[i] = c[i] + rot_c;
 				x = 51;
 			}
 			rot_c = rot_c * -1;
 		}
 		i++;
 	}
-	return (n);
+	return (c);
 }
