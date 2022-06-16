@@ -1,28 +1,31 @@
 #include "main.h"
-#include <stdio.h>
+#include "stdio.h"
+
 /**
- * rot13 - encodes a string by rotating the characters 13 spaces
- * @s: pointer to input string.
- * Return: Returns pointer encoded string.
+ * rot13 - encodes a string using rot13
+ * @c: input string.
+ * Return: the pointer to dest
  */
+
 char *rot13(char *c)
 {
-	int i, j;
-	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char boolean;
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; c[i] != '\0'; i++)
+	while (*(c + count) != '\0')
 	{
-		boolean = 0;
-		for (j = 0; alpha[j] != '\0' && boolean == 0; j++)
+
+		for (i = 0; i < 52; i++)
 		{
-			if (c[i] == alpha[j])
+			if (*(c + count) == alphabet[i])
 			{
-				c[i] = r[j];
-				boolean = 1;
+				*(c + count) = rot13[i];
+				break;
 			}
 		}
+		count++;
 	}
+
 	return (c);
 }
