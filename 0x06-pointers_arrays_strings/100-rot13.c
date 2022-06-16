@@ -1,32 +1,28 @@
 #include "main.h"
 
 /**
- * rot13 - a function that encodes a string using rot13
- * ONE if, TWO loops only...
- * @c: input
- * Return: decrypted string
+ * rot13 - encodes a string by rotating the characters 13 spaces.
+ * @s: pointer to input string.
+ * Return: Returns pointer encoded string.
  */
 char *rot13(char *c)
 {
-	int x, rot_c = 13, i = 0;
-	char toswap[] = {'A', 'N', 'a', 'n', 'B', 'O', 'b', 'o', 'C', 'P',
-		'c', 'p', 'D', 'Q', 'd', 'q', 'E', 'R', 'e', 'r', 'F', 'S', 'f',
-		's', 'G', 'T', 'g', 't', 'H', 'U', 'h', 'u', 'I', 'V', 'i', 'v',
-		'J', 'W', 'j', 'w', 'K', 'X', 'k', 'x', 'L', 'Y', 'l', 'y', 'M',
-		'Z', 'm', 'z'};
+	int i, j;
+	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char boolean;
 
-	while (c[i] != '\0')
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (x = 0; x <= 51; x++)
+		boolean = 0;
+		for (j = 0; alpha[j] != '\0' && boolean == 0; j++)
 		{
-			if (c[i] == toswap[x])
+			if (c[i] == alpha[j])
 			{
-				c[i] = c[i] + rot_c;
-				x = 51;
+				c[i] = r[j];
+				boolean = 1;
 			}
-			rot_c = rot_c * -1;
 		}
-		i++;
 	}
 	return (c);
 }
