@@ -36,5 +36,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			r[j] = '\0';
 	}
 	r[j] = '\0';
-	return (r);
+	return (0);
 }
