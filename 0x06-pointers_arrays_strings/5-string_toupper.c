@@ -5,7 +5,7 @@
  * @n: input string
  * Return: capitialized string
  */
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
