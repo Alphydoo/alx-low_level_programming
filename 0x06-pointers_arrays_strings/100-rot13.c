@@ -5,7 +5,7 @@
  * @s: pointer to input string.
  * Return: Returns pointer encoded string.
  */
-char *rot13(char *c)
+char *rot13(char *)
 {
 	int i, j;
 	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
