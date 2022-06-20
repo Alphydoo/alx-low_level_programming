@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - Entry point
+ * _memset - a function that fils memory with a constant byte
  * @s: pointed destination
  * @b: constant byte
  * @n: bytes
