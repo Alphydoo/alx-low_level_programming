@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * _strpbrk - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -20,5 +19,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	return (NULL);
+	return (0);
 }
