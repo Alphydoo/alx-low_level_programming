@@ -7,7 +7,7 @@
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
  *
- * Return: 0 on success
+ * Return: no return.
  */
 void _is_zero(char *argv[])
 {
@@ -52,64 +52,34 @@ char *_initialize_array(char *ar, int lar)
 }
 
 /**
-<<<<<<< HEAD
- * print_int - prints an integer.
- * @n: int
- * Return: 0 on success
-=======
  * _checknum - determines length of the number
  * and checks if number is in base 10.
  * @argv: arguments vector.
  * @n: row of the array.
  *
  * Return: length of the number.
->>>>>>> ee030d02abee6dcf438b0b9014e1aa34d06f3acc
  */
 int _checknum(char *argv[], int n)
 {
 	int ln;
 
-<<<<<<< HEAD
-unsigned  long int divisor = 1, i, resp;
-
-for (i = 0; n / divisor > 9; i++, divisor *= 10)
-;
-
-for ( ; divisor >= 1; n %= divisor, divisor /= 10)
-{
-resp = n / divisor;
-_putchar('0' + resp);
-}
-=======
 	for (ln = 0; argv[n][ln]; ln++)
 		if (!isdigit(argv[n][ln]))
 		{
 			printf("Error\n");
 			exit(98);
 		}
->>>>>>> ee030d02abee6dcf438b0b9014e1aa34d06f3acc
 
 	return (ln);
 }
 
 /**
-<<<<<<< HEAD
- * main - print the result of the multiplication, followed by a new line
- * @argc: int
- * @argv: list
- * Return: 0 on success
-=======
  * main - Entry point.
  * program that multiplies two positive numbers.
  * @argc: number of arguments.
  * @argv: arguments vector.
  *
-<<<<<<< HEAD
- * Return: 0 on success.
-=======
  * Return: 0 - success.
->>>>>>> ee030d02abee6dcf438b0b9014e1aa34d06f3acc
->>>>>>> 15c5780711609a43090722a7bab32f453f427db6
  */
 int main(int argc, char *argv[])
 {
