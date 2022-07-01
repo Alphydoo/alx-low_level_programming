@@ -75,7 +75,7 @@ unsigned  long int divisor = 1, i, resp;
 for (i = 0; n / divisor > 9; i++, divisor *= 10)
 ;
 
-for (divisor >= 1; n %= divisor, divisor /= 10)
+for ( ; divisor >= 1; n %= divisor, divisor /= 10)
 {
 resp = n / divisor;
 _putchar('0' + resp);
