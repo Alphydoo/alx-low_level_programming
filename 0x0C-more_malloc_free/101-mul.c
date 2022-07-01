@@ -7,7 +7,7 @@
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
  *
- * Return: no return.
+ * Return: 0 on success
  */
 void _is_zero(char *argv[])
 {
@@ -79,7 +79,7 @@ int _checknum(char *argv[], int n)
  * @argc: number of arguments.
  * @argv: arguments vector.
  *
- * Return: 0 - success.
+ * Return: 0 on success.
  */
 int main(int argc, char *argv[])
 {
