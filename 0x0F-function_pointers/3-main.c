@@ -1,55 +1,36 @@
+#include "3-calc.h"
 #include <stdio.h>
-#include "function_pointers.h"
+#include <stdlib.h>
 
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
+ * main - program to perform operations
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
- * Return: 0 if false, something else otherwise.
+ * Return: always 0
  */
-int is_98(int elem)
+
+int main(int argc, char *argv[])
 {
-    return (98 == elem);
-}
+	int num1, num2;
+	char *op;
 
-/**
- * is_strictly_positive - check if a number is greater than 0
- * @elem: the integer to check
- *
- * Return: 0 if false, something else otherwise.
- */
-int is_strictly_positive(int elem)
-{
-    return (elem > 0);
-}
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	op = argv[2];
 
-/**
- * abs_is_98 - check if the absolute value of a number is 98
- * @elem: the integer to check
- *
- * Return: 0 if false, something else otherwise.
- */
-int abs_is_98(int elem)
-{
-    return (elem == 98 || -elem == 98);
-}
+	if (get_op_func(op) == NULL || op[1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -98, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 98};
-    int index;
-
-    index = int_index(array, 20, is_98);
-    printf("%d\n", index);
-    index = int_index(array, 20, abs_is_98);
-    printf("%d\n", index);
-    index = int_index(array, 20, is_strictly_positive);
-    printf("%d\n", index);
-    return (0);
+	printf("%d\n", get_op_func(op)(num1, num2));
+	return (0);
 }
