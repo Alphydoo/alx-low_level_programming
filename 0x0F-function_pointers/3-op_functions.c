@@ -71,17 +71,3 @@ int op_mod(int a, int b)
 	}
 	return (a % b);
 }
-
-
-100-main_opcodes.c
-
-#include "main.h"
-/**
-  * main - define function
-  * @void - describe argument
-  * Return: what does it return?
-  */
-int main(void)
-{
-	return (0);
-}
