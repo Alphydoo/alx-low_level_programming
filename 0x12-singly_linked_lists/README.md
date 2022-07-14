@@ -8,7 +8,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 1. When and why using linked lists vs arrays
 2. How to build and use linked lists
 ---
-## **0. Print list**
+## [**0. Print list**](0-print_list.c)
 Write a function that prints all the elements of a list_t list
 
 ## **1. List lenght**
