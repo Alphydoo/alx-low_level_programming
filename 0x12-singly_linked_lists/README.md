@@ -1,6 +1,7 @@
 # **0x12. C - Singly linked lists**
 ---
 ## **Resources**
+
 [Linked Lists](Linked Lists)
 
 [Google](Google)
