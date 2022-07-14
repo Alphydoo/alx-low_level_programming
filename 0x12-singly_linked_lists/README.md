@@ -2,7 +2,9 @@
 ---
 ## **Resources**
 [Linked Lists](Linked Lists)
+
 [Google](Google)
+
 [Youtube](Youtube)
 
 ## **Learning Objectives**
