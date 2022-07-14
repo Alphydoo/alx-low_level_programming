@@ -6,7 +6,7 @@
  * at the end of a list_t list.
  * @head: input
  * @str: input
- * Return: 0 on success
+ * Return: 0
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
