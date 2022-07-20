@@ -31,3 +31,6 @@ Start to look for the right source of information without too much help
 
 ## **Description of Files**
 
+## [**0. Print list**](0-print_listint.c)
+Write a function that prints all the elements of a listint_t list, return the number of nodes
+
