@@ -61,3 +61,12 @@ Write a function that returns the sum of all the data (n) of a listint_t linked 
 ## [**9. Insert**](9-insert_nodeint.c)
 Write a function that inserts a new node at a given position, where idx is the index of the list where the new node should be added. Index starts at 0; return the address of the new node, or NULL if it failed; ifit is not possible to add the node at index idx, do not add the new node and return NULL
 
+## [**10. Delete at index**](10-delete_nodeint.c)
+Write a function that deletes the node at index index of a listint_t linked list;where index is the index of the node that should be deleted. Index starts at 0;Returns: 1 if it succeeded, -1 if it failed
+
+## [**11. Reverse list**](100-reverse_listint.c)
+Write a function that reverses a listint_t linked list: Returns: a pointer to the first node of the reversed list;You are not allowed to use more than 1 loop;You are not allowed to use malloc, free or arrays;You can only declare a maximum of two variables in your function.
+
+## [**12. Print (safe version)**](101-print_listint_safe.c)
+Write a function that prints a listint_t linked list: Returns: the number of nodes in the list;This function can print lists with a loop;You should go through the list only once;If the function fails, exit the program with status 98
+
