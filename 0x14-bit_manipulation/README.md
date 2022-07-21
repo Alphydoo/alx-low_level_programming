@@ -7,4 +7,16 @@ ALX School - Introduction to Bit manipulation
 The bitwise operators: ^, |, &, <<, >>, and ~
 
 ---
+## **Learning Objectives**
+
+Google
+
+Youtube
+---
+## **General**
+Look for the right source of information without too much help
+
+How to manipulate bits and use bitwise operators
+---
+
 
