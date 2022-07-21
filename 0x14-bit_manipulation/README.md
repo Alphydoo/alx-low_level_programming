@@ -45,3 +45,16 @@ Returns: 1 if it worked, or -1 if an error occurred.
 Write a function that sets the value of a bit to 0 at a given index:
 where index is the index, starting from 0 of the bit you want to set;
 Returns: 1 if it worked, or -1 if an error occurred.
+
+### [**5. 101**](5-flip_bits.c)
+Write a function that returns the number of bits you would need to flip to get from one number to another:
+You are not allowed to use the % or / operators.
+
+### [**6. Endianness**](100-get_endianness.c)
+Write a function that checks the endianness:
+Returns: 0 if big endian, 1 if little endian.
+
+### [**7. Crackme3**](101-password)
+Find the password for this program:
+Save the password in the file 101-password;
+Your file should contain the exact password, no new line, no extra space.
