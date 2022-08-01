@@ -3,9 +3,9 @@ c Syscall
 ### **Low-level programming & Algorithm - Linux and Unix System**
 ---
 ## **Resources**
-File descriptors
+* File descriptors
 
-C Programming in Turiorail 024 - open() read() write() Functions
+* C Programming in Turiorail 024 - open() read() write() Functions
 
 ---
 ## **Learning Objectives/General**
