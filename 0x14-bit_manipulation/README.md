@@ -9,15 +9,15 @@ The bitwise operators: ^, |, &, <<, >>, and ~
 ---
 ## **Learning Objectives**
 
-Google
+* Google
 
-Youtube
+* Youtube
 
 ---
 ## **General**
-Look for the right source of information without too much help
+* Look for the right source of information without too much help
 
-How to manipulate bits and use bitwise operators
+* How to manipulate bits and use bitwise operators
 
 ---
 ## **Description of Files**
