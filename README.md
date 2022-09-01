@@ -26,7 +26,7 @@ This repository contains programs written for the low-level programming and algo
 * 0x13. C - More singly linked lists
 * 0x15. C - File I/O
 * 0x16. C - Simple Shell
-
+* 0x17-doubly_linked_lists
 
 
 
