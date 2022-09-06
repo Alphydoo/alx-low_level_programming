@@ -27,6 +27,7 @@ This repository contains programs written for the low-level programming and algo
 * 0x15. C - File I/O
 * 0x16. C - Simple Shell
 * 0x17-doubly_linked_lists
+* 0x18-dynamic_libraries
 
 
 
